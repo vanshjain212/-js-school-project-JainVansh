@@ -1,0 +1,143 @@
+/* Base Reset & Typography */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+  padding: 1rem;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #1e1e2f;
+  color: white;
+}
+
+header figure img {
+  height: 40px;
+}
+
+#theme-toggle {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Navigation */
+nav#filters {
+  margin: 1rem 0;
+  padding: 0.5rem;
+  background-color: #9febdf;
+  border-radius: 6px;
+}
+
+/* Timeline Layout */
+#timeline {
+  display: flex;
+  gap: 2rem;
+  padding: 1rem 0;
+}
+
+/* Event Marker */
+.event {
+  background-color: #fff;
+  border-left: 4px solid #0078d7;
+  padding: 1rem;
+  border-radius: 6px;
+  box-shadow: 2px 2px 6px black;
+  text-align: center;
+}
+
+.event h2 {
+  font-size: 1.25rem;
+  color: #0078d7;
+}
+
+.event figure {
+  margin: 0.5rem 0;
+}
+
+.event img {
+  max-width: 100%;
+  height: 250px;
+  border-radius: 4px;
+}
+
+.event figcaption {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.learn-more {
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #0078d7;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Modal Styles */
+#modal {
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 600px;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 8px;
+  padding: 1rem;
+  z-index: 1000;
+  display: none;
+}
+
+/* Footer */
+footer {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #999;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 768px) {
+  #timeline {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+
+  header {
+    padding: 1.5rem 2rem;
+  }
+
+  .event {
+    border-left: none;
+    border-top: 4px solid #0078d7;
+  }
+}
+
+@media (min-width:769px) and (max-width: 1024px) {
+  body {
+    padding: 2rem 4rem;
+  }
+
+  #timeline {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .event h2 {
+    font-size: 1.5rem;
+  }
+}
