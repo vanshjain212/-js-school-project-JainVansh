@@ -1,0 +1,58 @@
+[
+  {
+    "year": "1977",
+    "title": "First Personal Computer",
+    "description": "Apple, Commodore, and Tandy introduced the first generation of personal computers.",
+    "imageURL": "https://media.gettyimages.com/id/90738222/photo/ibm-model-4860-pcjr-personal-computer-c-1983.jpg?s=1024x1024&w=gi&k=20&c=JUmuzqgHfpF9BeJC0-JOHz-qhB0IfULbdB4SlM-t56Y=",
+    "category": "Hardware"
+  },
+  {
+    "year": "1981",
+    "title": "IBM PC Launch",
+    "description": "IBM released its first PC, setting standards for future hardware.",
+    "imageURL": "https://th.bing.com/th/id/R.1f4c671d678f35b8f947e12ca448db05?rik=uOODVeIbDpd3kQ&riu=http%3a%2f%2fwww.extremetech.com%2fwp-content%2fuploads%2f2011%2f08%2fibm-pc.jpg&ehk=dIMw0Ch87Z4AzzjoRYwuc4YbhzkUi9efuBmulhg2JLM%3d&risl=&pid=ImgRaw&r=0",
+    "category": "Hardware"
+  },
+  {
+    "year": "1984",
+    "title": "Macintosh Debut",
+    "description": "Apple launched the Macintosh with a graphical user interface.",
+    "imageURL": "https://tse1.mm.bing.net/th/id/OIP.DrlKOmKLpPUzXh3DxI8jRwHaGV?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+    "category": "UI/UX"
+  },
+  {
+    "year": "1990",
+    "title": "Windows 3.0",
+    "description": "Microsoft released Windows 3.0, popularizing GUI-based computing.",
+    "imageURL": "https://th.bing.com/th/id/R.f87e502e6728eee9e475e81d690c7ead?rik=NBSvqvXjcNDQpw&riu=http%3a%2f%2fgunkies.org%2fw%2fimages%2f4%2f41%2fWindows_3.0_Box.jpg&ehk=WJbx%2fdrVY%2fZ6dmvRykGSJ69YqZ%2bw%2blfOa1BuPO%2fMvMk%3d&risl=&pid=ImgRaw&r=0",
+    "category": "Software"
+  },
+  {
+    "year": "1995",
+    "title": "Windows 95",
+    "description": "Windows 95 introduced the Start menu and plug-and-play support.",
+    "imageURL": "https://tse3.mm.bing.net/th/id/OIP.wFrfotrnzr8iK1oVulOpzQHaFT?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+    "category": "Software"
+  },
+  {
+    "year": "2001",
+    "title": "Mac OS X",
+    "description": "Apple released Mac OS X, combining power and elegance.",
+    "imageURL": "https://tse4.mm.bing.net/th/id/OIP.mnh9S-1edCdhXlbHZKo3CgHaHD?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+    "category": "Software"
+  },
+  {
+    "year": "2007",
+    "title": "iPhone Launch",
+    "description": "Apple introduced the iPhone, redefining mobile computing.",
+    "imageURL": "https://tse2.mm.bing.net/th/id/OIP.rowKoph7SrTP_L5oQ1UgfgHaGw?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+    "category": "Mobile"
+  },
+  {
+    "year": "2015",
+    "title": "Windows 10",
+    "description": "Microsoft unified its OS across devices with Windows 10.",
+    "imageURL": "https://tse2.mm.bing.net/th/id/OIP.wsYVr1vjqDf5BJxBdwHzSwHaFm?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+    "category": "Software"
+  }
+]
