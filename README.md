@@ -1,35 +1,47 @@
 # -js-school-project-JainVansh--
 # 🕰️ PC History Timeline App
 
-A responsive, accessible timeline web app built using semantic HTML, modern CSS, and vanilla JavaScript.
+A responsive, accessible timeline web app built with semantic HTML, modern CSS, and modular TypeScript. This project dynamically renders historical computing events from a JSON file and displays full details in a modal popup using vanilla JS and ES modules.
 
 ---
 
 ## 🎯 Project Goals
 
-- Build a semantic and accessible layout using HTML5 tags.
-- Style the timeline with responsive design principles using Flexbox and CSS Grid.
-- Dynamically render timeline events from a JSON file.
-- Implement modal interactivity and theme toggle structure.
-- Practice modular, scalable front-end development.
+- ✅ Semantic HTML layout with accessibility-first structure
+- ✅ Responsive design using Flexbox and media queries
+- ✅ Dynamic rendering of timeline events from `events.json`
+- ✅ Modal interactivity with full event details
+- ✅ Modular TypeScript architecture with strict typing
+- ✅ Clean build pipeline using `tsc`
 
 ---
 
 ## 🧱 Tech Stack
 
-- **HTML5**: Semantic structure with proper landmarks (`<header>`, `<main>`, `<section>`, `<article>`, `<figure>`, etc.)
-- **CSS3**: Responsive layout using Flexbox/Grid, media queries, and polished UI styling.
-- **JavaScript (Vanilla)**: Dynamic rendering, modal logic, and event handling.
-- **Accessibility**: Alt attributes, ARIA roles, keyboard-friendly controls.
+- **HTML5**: Semantic structure with proper landmarks
+- **CSS3**: Responsive layout and polished styling
+- **TypeScript**: Static typing, modular code, and strict mode
+- **ES Modules**: Separation of concerns via `fetcher.ts`, `renderer.ts`, `modal.ts`
+- **Accessibility**: Alt attributes, ARIA roles, keyboard-friendly controls
 
 ---
 
 ## 📁 File Structure
 
 ```plaintext
-task-2/
-├── index.html         # Semantic skeleton with script integration
-├── style.css          # Responsive and accessible styling
-├── script.js          # Dynamic rendering and modal logic
-├── events.json    # Timeline event data (year, title, description, imageURL, category)     
-└── README.md          # Project overview and roadmap
+dataart
+├── index.html              # Semantic layout with script loader
+├── style.css               # Responsive and accessible styling
+├── logo.svg                # App logo
+├── data/
+│   └── events.json         # Timeline event data
+├── src/
+│   ├── index.ts            # Entry point
+│   ├── fetcher.ts          # Loads and parses events.json
+│   ├── renderer.ts         # Renders timeline events
+│   ├── modal.ts            # Handles modal logic
+│   └── types.ts            # TimelineEvent interface
+├── dist/
+│   └── *.js                # Compiled JS output
+├── tsconfig.json           # TypeScript compiler config
+└── README.md               # Project overview and roadmap
