@@ -1,47 +1,53 @@
-# -js-school-project-JainVansh--
 # 🕰️ PC History Timeline App
 
-A responsive, accessible timeline web app built with semantic HTML, modern CSS, and modular TypeScript. This project dynamically renders historical computing events from a JSON file and displays full details in a modal popup using vanilla JS and ES modules.
+A responsive, accessible timeline web app built with **React**, **TypeScript**, and **Vite** — showcasing key milestones in personal computing history. Originally built with semantic HTML and vanilla TypeScript, now migrated to a modular React architecture.
 
 ---
 
 ## 🎯 Project Goals
 
-- ✅ Semantic HTML layout with accessibility-first structure
-- ✅ Responsive design using Flexbox and media queries
-- ✅ Dynamic rendering of timeline events from `events.json`
-- ✅ Modal interactivity with full event details
-- ✅ Modular TypeScript architecture with strict typing
-- ✅ Clean build pipeline using `tsc`
+- ✅ Semantic HTML layout with accessibility-first structure  
+- ✅ Responsive design using Flexbox and Grid  
+- ✅ Modular React components with strict TypeScript typing  
+- ✅ Dynamic rendering of timeline events from `events.json`  
+- ✅ Modal interactivity with full event details  
+- ✅ Theme toggle for light/dark mode  
+- ✅ Clean architecture with scalable component separation
 
 ---
 
 ## 🧱 Tech Stack
 
-- **HTML5**: Semantic structure with proper landmarks
-- **CSS3**: Responsive layout and polished styling
-- **TypeScript**: Static typing, modular code, and strict mode
-- **ES Modules**: Separation of concerns via `fetcher.ts`, `renderer.ts`, `modal.ts`
-- **Accessibility**: Alt attributes, ARIA roles, keyboard-friendly controls
+| Layer         | Tools Used                     |
+|--------------|---------------------------------|
+| Framework     | React + TypeScript             |
+| Build Tool    | Vite                           |
+| Styling       | CSS (global + responsive)      |
+| Data          | Static JSON (`events.json`)    |
+| Accessibility | Semantic HTML + ARIA roles     |
 
 ---
 
-## 📁 File Structure
-
-```plaintext
-dataart
-├── index.html              # Semantic layout with script loader
-├── style.css               # Responsive and accessible styling
-├── logo.svg                # App logo
-├── data/
-│   └── events.json         # Timeline event data
+## 📁 Folder Structure
+pc-history-timeline/
+├── public/
+│   ├── data/
+│   │   └── events.json
+│   └── logo.svg
 ├── src/
-│   ├── index.ts            # Entry point
-│   ├── fetcher.ts          # Loads and parses events.json
-│   ├── renderer.ts         # Renders timeline events
-│   ├── modal.ts            # Handles modal logic
-│   └── types.ts            # TimelineEvent interface
-├── dist/
-│   └── *.js                # Compiled JS output
-├── tsconfig.json           # TypeScript compiler config
-└── README.md               # Project overview and roadmap
+│   ├── components/
+│   │   ├── Header.tsx
+│   │   ├── Timeline.tsx
+│   │   ├── EventMarker.tsx
+│   │   ├── Modal.tsx
+│   │   └── FilterPanel.tsx
+│   ├── styles/
+│   │   └── style.css
+│   ├── types/
+│   │   └── index.ts
+│   ├── App.tsx
+│   └── main.tsx
+├── index.html
+├── tsconfig.json
+├── vite.config.ts
+
