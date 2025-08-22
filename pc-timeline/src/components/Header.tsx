@@ -4,6 +4,8 @@ export const Header = ({ toggleTheme }: { toggleTheme: () => void }) => (
   <header>
     <img src={logo} alt="App Logo" />
     <h3>PC History Timeline</h3>
-    <button onClick={toggleTheme}>🌓</button>
+    <button onClick={toggleTheme} aria-label="Toggle theme">
+      🌓
+    </button>
   </header>
 );
