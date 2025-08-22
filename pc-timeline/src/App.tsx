@@ -7,7 +7,9 @@ import './styles/style.css';
 
 function App() {
   const [events, setEvents] = useState<TimelineEvent[]>([]);
-  const [selectedEvent, setSelectedEvent] = useState<TimelineEvent | null>(null);
+  const [selectedEvent, setSelectedEvent] = useState<TimelineEvent | null>(
+    null
+  );
 
   useEffect(() => {
     fetch('./data/events.json')
@@ -23,9 +25,14 @@ function App() {
   return (
     <>
       <Header toggleTheme={toggleTheme} />
-      <Timeline events={events} onSelect={setSelectedEvent} />
+      <main id="main-content">
+        <Timeline events={events} onSelect={setSelectedEvent} />
+      </main>
       {selectedEvent && (
-        <EventModal event={selectedEvent} onClose={() => setSelectedEvent(null)} />
+        <EventModal
+          event={selectedEvent}
+          onClose={() => setSelectedEvent(null)}
+        />
       )}
     </>
   );
