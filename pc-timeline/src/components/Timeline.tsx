@@ -10,7 +10,11 @@ export const Timeline = ({
 }) => (
   <section id="timeline">
     {events.map(event => (
-      <EventMarker key={event.year} event={event} onClick={() => onSelect(event)} />
+      <EventMarker
+        key={event.id}
+        event={event}
+        onClick={() => onSelect(event)}
+      />
     ))}
   </section>
 );
